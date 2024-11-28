@@ -1,20 +1,9 @@
-ARCHS = arm64 arm64e
-TARGET = iphone:clang:latest:11.0
-INSTALL_TARGET_PROCESSES = SpringBoard
+ARCHS ?= armv7 armv7s arm64 arm64e
+TARGET ?= iphone:clang:14.5:8.0
 
 include $(THEOS)/makefiles/common.mk
-
-TWEAK_NAME = Shadow
-
-ShadowHooks = $(wildcard hooks/*.x)
-
-Shadow_FILES = $(ShadowHooks) Tweak.x
-Shadow_LIBRARIES = rocketbootstrap
-Shadow_EXTRA_FRAMEWORKS = Cephei
-Shadow_PRIVATE_FRAMEWORKS = AppSupport
-Shadow_CFLAGS = -fobjc-arc
-
-include $(THEOS_MAKE_PATH)/tweak.mk
-SUBPROJECTS += shadowd
-SUBPROJECTS += shadowsettings
+SUBPROJECTS += Shadow.framework
+SUBPROJECTS += Shadow.dylib
+SUBPROJECTS += ShadowSettings.bundle
+SUBPROJECTS += shdw
 include $(THEOS_MAKE_PATH)/aggregate.mk

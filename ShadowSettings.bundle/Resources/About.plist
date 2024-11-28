@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>UPDATES_HDR</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTitleValueCell</string>
+			<key>label</key>
+			<string>LATEST_VERSION</string>
+			<key>get</key>
+			<string>aboutLatestVersion:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>openChangeLog:</string>
+			<key>label</key>
+			<string>VISIT_CHANGELOG</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>CREDITS_HDR</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTitleValueCell</string>
+			<key>label</key>
+			<string>DEVELOPER</string>
+			<key>get</key>
+			<string>aboutDeveloper:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTitleValueCell</string>
+			<key>label</key>
+			<string>LOCALIZATION_HDR</string>
+			<key>get</key>
+			<string>aboutTranslator:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>openGitHub:</string>
+			<key>label</key>
+			<string>VISIT_GITHUB</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>openKofi:</string>
+			<key>label</key>
+			<string>VISIT_KOFI</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>ABOUT_TITLE</string>
+</dict>
+</plist>
